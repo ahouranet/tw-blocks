@@ -1,0 +1,40 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "tw-blocks/counter",
+  "version": "1.0.0",
+  "title": "شمارندهٔ عددی پویا (Counter)",
+  "category": "tw-blocks",
+  "icon": "performance",
+  "description": "شمارندهٔ آمار و ارقام با انیمیشن هنگام ورود به دید کاربر (IntersectionObserver) و پشتیبانی بومی از ارقام فارسی.",
+  "keywords": ["counter", "stats", "number", "شمارنده", "آمار"],
+  "textdomain": "tw-blocks",
+  "attributes": {
+    "targetNumber": {
+      "type": "number",
+      "default": 1250
+    },
+    "prefix": {
+      "type": "string",
+      "default": "+"
+    },
+    "suffix": {
+      "type": "string",
+      "default": " پروژهٔ موفق"
+    },
+    "label": {
+      "type": "string",
+      "default": "رضایت مشتریان سازمانی"
+    },
+    "durationMs": {
+      "type": "number",
+      "default": 1200
+    }
+  },
+  "supports": {
+    "html": false
+  },
+  "editorScript": "file:../../build/editor/index.js",
+  "viewScript": "file:./view.js",
+  "render": "file:./render.php"
+}

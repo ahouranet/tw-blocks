@@ -1,0 +1,19 @@
+{
+  "name": "tw-blocks-remote-build-server",
+  "version": "1.0.0",
+  "description": "Reference Remote Tailwind CSS v4 Build Microservice (Driver B) for TW Blocks WordPress Plugin",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@tailwindcss/node": "^4.1.0",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "tailwindcss": "^4.1.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

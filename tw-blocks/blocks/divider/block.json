@@ -1,0 +1,31 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "tw-blocks/divider",
+  "version": "1.0.0",
+  "title": "Horizontal Divider",
+  "category": "tw-blocks",
+  "icon": "minus",
+  "description": "Semantic horizontal rule (<hr>) with customizable Tailwind border tokens.",
+  "keywords": ["divider", "separator", "hr", "line"],
+  "textdomain": "tw-blocks",
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "twClasses": {
+      "type": "string",
+      "default": "my-8 border-t border-slate-200"
+    },
+    "twResponsive": {
+      "type": "object",
+      "default": {}
+    },
+    "twStates": {
+      "type": "object",
+      "default": {}
+    }
+  },
+  "editorScript": "tw-blocks-editor",
+  "render": "file:./render.php"
+}

@@ -1,0 +1,37 @@
+/**
+ * Conditional WooCommerce Cart, Checkout & My Account Stylesheet (`is_cart() || is_checkout() || is_account_page()`).
+ * Styles classic shortcodes (`[woocommerce_cart]`, `[woocommerce_checkout]`) in RTL and maps CSS variables for WC Blocks mode.
+ */
+.woocommerce-cart .woocommerce,
+.woocommerce-checkout .woocommerce,
+.woocommerce-account .woocommerce {
+	font-family: var(--twb-font-base, Vazirmatn, Tahoma, sans-serif);
+	direction: rtl;
+	text-align: start;
+	color: var(--twb-color-foreground, #0f172a);
+}
+.woocommerce table.shop_table {
+	border: 1px solid var(--twb-color-border, #e2e8f0);
+	border-radius: var(--twb-radius-lg, 0.75rem);
+	border-collapse: separate;
+	overflow: hidden;
+	background: var(--twb-color-background, #ffffff);
+}
+.woocommerce #payment #place_order,
+.woocommerce-cart .wc-proceed-to-checkout a.checkout-button {
+	background-color: var(--twb-color-primary, #0d9488);
+	color: #ffffff;
+	border-radius: var(--twb-radius-md, 0.5rem);
+	font-weight: 700;
+	padding-block: 0.875rem;
+	padding-inline: 1.5rem;
+}
+.woocommerce form .form-row input.input-text,
+.woocommerce form .form-row textarea,
+.woocommerce form .form-row select {
+	border: 1px solid var(--twb-color-border, #e2e8f0);
+	border-radius: var(--twb-radius-md, 0.5rem);
+	padding-block: 0.625rem;
+	padding-inline: 0.75rem;
+	font-family: inherit;
+}

@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --twb-font-sans: 'Vazirmatn', 'Tahoma', system-ui, -apple-system, sans-serif;
+    --twb-font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  }
+
+  html {
+    font-family: var(--twb-font-sans);
+    line-height: 1.8;
+    letter-spacing: 0em;
+  }
+
+  code, pre, .font-mono {
+    font-family: var(--twb-font-mono);
+    letter-spacing: 0em;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.twb-ltr-input {
+  direction: ltr !important;
+  text-align: left !important;
+  unicode-bidi: embed;
+  font-family: var(--twb-font-mono);
+}

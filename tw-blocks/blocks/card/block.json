@@ -1,0 +1,54 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "tw-blocks/card",
+  "version": "1.0.0",
+  "title": "Feature Card",
+  "category": "tw-blocks",
+  "icon": "id-alt",
+  "description": "Content card with badge, Persian heading, summary paragraph, and directional CTA link.",
+  "keywords": ["card", "box", "feature"],
+  "textdomain": "tw-blocks",
+  "supports": {
+    "html": false,
+    "anchor": true
+  },
+  "attributes": {
+    "badge": {
+      "type": "string",
+      "default": "نسخهٔ ۴ تیلویند"
+    },
+    "title": {
+      "type": "string",
+      "default": "معماری بدون جی‌کوئری و کاملاً ماژولار"
+    },
+    "description": {
+      "type": "string",
+      "default": "هر بلوک تنها استایل‌های موردنیاز خود را معرفی می‌کند و در انتها یک فایل CSS واحد و سبک در سطح برگه تولید می‌شود."
+    },
+    "linkLabel": {
+      "type": "string",
+      "default": "مشاهدهٔ جزئیات"
+    },
+    "linkUrl": {
+      "type": "string",
+      "default": "#details"
+    },
+    "twClasses": {
+      "type": "string",
+      "default": "rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition duration-200"
+    },
+    "twResponsive": {
+      "type": "object",
+      "default": {}
+    },
+    "twStates": {
+      "type": "object",
+      "default": {
+        "hover": "shadow-md -translate-y-1"
+      }
+    }
+  },
+  "editorScript": "tw-blocks-editor",
+  "render": "file:./render.php"
+}

@@ -1,0 +1,35 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "tw-blocks/spacer",
+  "version": "1.0.0",
+  "title": "Vertical Spacer",
+  "category": "tw-blocks",
+  "icon": "sort",
+  "description": "Clean responsive vertical spacing block using Tailwind height utilities.",
+  "keywords": ["spacer", "gap", "space"],
+  "textdomain": "tw-blocks",
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "heightClass": {
+      "type": "string",
+      "default": "h-12"
+    },
+    "twClasses": {
+      "type": "string",
+      "default": ""
+    },
+    "twResponsive": {
+      "type": "object",
+      "default": {}
+    },
+    "twStates": {
+      "type": "object",
+      "default": {}
+    }
+  },
+  "editorScript": "tw-blocks-editor",
+  "render": "file:./render.php"
+}

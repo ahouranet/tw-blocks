@@ -1,0 +1,20 @@
+{
+  "name": "tw-blocks",
+  "version": "1.0.0",
+  "description": "TW Blocks — Lightweight, SEO-first, RTL-native Gutenberg block builder powered by Tailwind CSS v4.",
+  "author": "TW Blocks Team",
+  "license": "GPL-2.0-or-later",
+  "private": true,
+  "scripts": {
+    "build": "wp-scripts build src/editor/index.js --output-path=build/editor",
+    "start": "wp-scripts start src/editor/index.js --output-path=build/editor",
+    "lint:js": "wp-scripts lint-js src/",
+    "i18n:pot": "wp i18n make-pot . languages/tw-blocks.pot --domain=tw-blocks",
+    "i18n:mo": "node bin/compile-mo.mjs",
+    "i18n:json": "wp i18n make-json languages/tw-blocks-fa_IR.po --no-purge",
+    "package:zip": "npm run build && npm run i18n:mo && zip -r ../tw-blocks.zip . -x 'node_modules/*' '.git/*' 'src/*'"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^30.5.0"
+  }
+}

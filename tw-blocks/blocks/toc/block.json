@@ -1,0 +1,35 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "tw-blocks/toc",
+  "version": "1.0.0",
+  "title": "فهرست مطالب خودکار (Dynamic TOC)",
+  "category": "tw-blocks",
+  "icon": "list-view",
+  "description": "استخراج پویا و خودکار تیترهای مقاله (H2 تا H4) با تولید شناسه‌های لنگر ASCII ایمن برای فارسی و ساختار جمع‌شونده بدون جاوااسکریپت.",
+  "keywords": ["toc", "table of contents", "headings", "فهرست مطالب", "تیترها"],
+  "textdomain": "tw-blocks",
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "آنچه در این مطلب می‌خوانید:"
+    },
+    "maxDepth": {
+      "type": "number",
+      "default": 3
+    },
+    "collapsible": {
+      "type": "boolean",
+      "default": true
+    },
+    "defaultOpen": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "supports": {
+    "html": false
+  },
+  "editorScript": "file:../../build/editor/index.js",
+  "render": "file:./render.php"
+}

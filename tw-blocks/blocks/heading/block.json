@@ -1,0 +1,50 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "tw-blocks/heading",
+  "version": "1.0.0",
+  "title": "Heading (H1–H6)",
+  "category": "tw-blocks",
+  "icon": "heading",
+  "description": "Semantic heading (h1-h6) with Persian typography metrics and automatic ASCII anchor ID generation.",
+  "keywords": ["heading", "title", "h1", "h2", "h3"],
+  "textdomain": "tw-blocks",
+  "supports": {
+    "html": false,
+    "anchor": true
+  },
+  "attributes": {
+    "content": {
+      "type": "string",
+      "default": "ساخت صفحات سریع، سئو‌محور و بومی برای وب فارسی"
+    },
+    "level": {
+      "type": "string",
+      "default": "h2"
+    },
+    "textAlign": {
+      "type": "string",
+      "default": "text-start"
+    },
+    "autoAnchor": {
+      "type": "boolean",
+      "default": true
+    },
+    "twClasses": {
+      "type": "string",
+      "default": "text-3xl font-bold text-slate-900 mb-4"
+    },
+    "twResponsive": {
+      "type": "object",
+      "default": {
+        "md": "text-4xl"
+      }
+    },
+    "twStates": {
+      "type": "object",
+      "default": {}
+    }
+  },
+  "editorScript": "tw-blocks-editor",
+  "render": "file:./render.php"
+}

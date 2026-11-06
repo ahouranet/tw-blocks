@@ -1,0 +1,60 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "tw-blocks/image",
+  "version": "1.0.0",
+  "title": "SEO Image (Zero-CLS)",
+  "category": "tw-blocks",
+  "icon": "format-image",
+  "description": "Responsive image with mandatory width/height attributes to prevent Cumulative Layout Shift (CLS), lazy loading, and optional figure caption.",
+  "keywords": ["image", "photo", "figure", "media"],
+  "textdomain": "tw-blocks",
+  "supports": {
+    "html": false,
+    "anchor": true
+  },
+  "attributes": {
+    "attachmentId": {
+      "type": "number",
+      "default": 0
+    },
+    "src": {
+      "type": "string",
+      "default": ""
+    },
+    "alt": {
+      "type": "string",
+      "default": "پیش‌نمایش ساختار بلوکی در ویرایشگر گوتنبرگ"
+    },
+    "width": {
+      "type": "number",
+      "default": 1200
+    },
+    "height": {
+      "type": "number",
+      "default": 675
+    },
+    "caption": {
+      "type": "string",
+      "default": ""
+    },
+    "loading": {
+      "type": "string",
+      "default": "lazy"
+    },
+    "twClasses": {
+      "type": "string",
+      "default": "rounded-xl overflow-hidden border border-slate-200 shadow-sm"
+    },
+    "twResponsive": {
+      "type": "object",
+      "default": {}
+    },
+    "twStates": {
+      "type": "object",
+      "default": {}
+    }
+  },
+  "editorScript": "tw-blocks-editor",
+  "render": "file:./render.php"
+}

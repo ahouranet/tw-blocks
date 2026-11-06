@@ -1,0 +1,480 @@
+# Copyright (C) 2026 TW Blocks Engineering
+# This file is distributed under the GPL v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: TW Blocks 1.0.0\n"
+"Report-Msgid-Bugs-To: https://example.com/tw-blocks\n"
+"POT-Creation-Date: 2026-11-06 00:00+0000\n"
+"PO-Revision-Date: 2026-11-06 00:00+0330\n"
+"Last-Translator: TW Blocks Engineering <i18n@example.com>\n"
+"Language-Team: Persian <fa@li.org>\n"
+"Language: fa_IR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n==0 || n==1);\n"
+"X-Domain: tw-blocks\n"
+
+msgid "TW Blocks"
+msgstr "TW Blocks"
+
+msgid "TW Blocks — Settings & Design Tokens"
+msgstr "تنظیمات و توکن‌های طراحی TW Blocks"
+
+msgid "Lightweight, SEO-first Gutenberg block builder powered by Tailwind CSS v4 with native Persian, RTL, and Jalali calendar support."
+msgstr "موتور بلوک‌ساز سبک و سئومحور گوتنبرگ بر پایهٔ Tailwind CSS v4 با پشتیبانی بومی فارسی، RTL و تقویم شمسی."
+
+msgid "Test Environment"
+msgstr "تست محیط (بررسی درایورها)"
+
+msgid "Testing host environment..."
+msgstr "در حال بررسی محیط هاست..."
+
+msgid "Purge & Rebuild CSS Cache"
+msgstr "پاک‌سازی و بازسازی کش CSS"
+
+msgid "CSS Build Engine & Active Driver Status"
+msgstr "وضعیت موتور بیلد CSS و درایور فعال"
+
+msgid "Currently Active Driver:"
+msgstr "درایور انتخاب‌شدهٔ فعلی:"
+
+msgid "Ready"
+msgstr "آماده"
+
+msgid "Unavailable"
+msgstr "غیرفعال"
+
+msgid "Driver A — Local Tailwind v4 Binary"
+msgstr "Driver A — باینری محلی Tailwind v4"
+
+msgid "Driver B — Remote Build API (HMAC Signed)"
+msgstr "Driver B — سرور بیلد از راه دور (HMAC API)"
+
+msgid "Driver C — Bundled Safelist Fallback"
+msgstr "Driver C — فایل آمادهٔ Safelist (جایگزین)"
+
+msgid "PHP proc_open() Function"
+msgstr "تابع proc_open() در PHP"
+
+msgid "proc_open() is enabled and available in PHP runtime."
+msgstr "تابع proc_open() در زمان اجرای PHP فعال و در دسترس است."
+
+msgid "proc_open() is disabled in php.ini (disable_functions) on this host."
+msgstr "تابع proc_open() در تنظیمات php.ini (disable_functions) روی این هاست غیرفعال شده است."
+
+msgid "Standalone Binary File"
+msgstr "فایل باینری مستقل Tailwind v4"
+
+msgid "Binary found at: %s"
+msgstr "فایل باینری در مسیر زیر یافت شد: %s"
+
+msgid "No Tailwind v4 binary found in %s"
+msgstr "هیچ باینری Tailwind v4 در مسیر %s یافت نشد."
+
+msgid "Executable Permission (chmod +x)"
+msgstr "دسترسی اجرایی (chmod +x)"
+
+msgid "Binary has executable permissions."
+msgstr "باینری دارای دسترسی اجرایی (+x) است."
+
+msgid "Binary is missing or does not have executable (+x) permission."
+msgstr "باینری موجود نیست یا فاقد دسترسی اجرایی (+x) است."
+
+msgid "CLI Execution Smoke Test"
+msgstr "تست اجرای آزمایشی CLI"
+
+msgid "Skipped because binary is not executable."
+msgstr "رد شد؛ زیرا باینری قابل‌اجرا نیست."
+
+msgid "Binary executed successfully (%s)."
+msgstr "باینری با موفقیت اجرا شد (%s)."
+
+msgid "Binary failed to execute: %s"
+msgstr "اجرای باینری با خطا مواجه شد: %s"
+
+msgid "Local binary driver is not available on this server."
+msgstr "درایور باینری محلی روی این سرور در دسترس نیست."
+
+msgid "Unable to create temporary build directory."
+msgstr "امکان ساخت پوشهٔ موقت بیلد وجود ندارد."
+
+msgid "Tailwind binary produced empty CSS output."
+msgstr "باینری Tailwind خروجی CSS خالی تولید کرد."
+
+msgid "Remote Build Endpoint URL"
+msgstr "آدرس Endpoint سرور بیلد از راه دور"
+
+msgid "Configured endpoint: %s"
+msgstr "آدرس تنظیم‌شده: %s"
+
+msgid "Remote API URL is not configured or is invalid."
+msgstr "آدرس API راه دور تنظیم نشده یا نامعتبر است."
+
+msgid "HMAC Secret Key"
+msgstr "کلید امنیتی امضای HMAC"
+
+msgid "Secret key is configured (16+ characters)."
+msgstr "کلید امنیتی تنظیم شده است (حداقل ۱۶ کاراکتر)."
+
+msgid "Secret key is missing or shorter than 16 characters."
+msgstr "کلید امنیتی وارد نشده یا کوتاه‌تر از ۱۶ کاراکتر است."
+
+msgid "Signed Build Handshake"
+msgstr "تست اتصال امضاشده با سرور بیلد"
+
+msgid "Skipped because URL or HMAC key is not configured."
+msgstr "رد شد؛ زیرا آدرس API یا کلید HMAC تنظیم نشده است."
+
+msgid "Remote API responded with valid minified CSS (%d bytes)."
+msgstr "سرور راه دور با موفقیت CSS مینیفای‌شده برگرداند (%d بایت)."
+
+msgid "Remote API test failed: %s"
+msgstr "تست اتصال به API راه دور ناموفق بود: %s"
+
+msgid "Unknown error"
+msgstr "خطای ناشناخته"
+
+msgid "Remote API URL or HMAC key is not configured."
+msgstr "آدرس API راه دور یا کلید HMAC تنظیم نشده است."
+
+msgid "Remote server returned invalid JSON payload."
+msgstr "سرور راه دور پاسخ JSON نامعتبری برگرداند."
+
+msgid "Bundled Safelist Stylesheet"
+msgstr "فایل CSS آمادهٔ Safelist همراه افزونه"
+
+msgid "Bundled safelist-fallback.css is ready (%d bytes)."
+msgstr "فایل safelist-fallback.css آمادهٔ سرویس‌دهی است (%d بایت)."
+
+msgid "Bundled safelist-fallback.css is missing from assets/css/."
+msgstr "فایل safelist-fallback.css در پوشهٔ assets/css/ یافت نشد."
+
+msgid "TW Blocks — Fallback Mode (Driver C: Safelist) is active:"
+msgstr "TW Blocks — حالت جایگزین (Driver C: Safelist) فعال است:"
+
+msgid "Neither the local Tailwind v4 binary (Driver A) nor the remote build API (Driver B) is available on this host. Serving pre-built Safelist CSS. Run \"Test Environment\" in settings for details."
+msgstr "باینری محلی Tailwind v4 (Driver A) یا سرور بیلد از راه دور (Driver B) روی این هاست پیکربندی نشده یا در دسترس نیست. افزونه هم‌اکنون از فایل CSS آمادهٔ Safelist استفاده می‌کند. برای جزئیات دکمهٔ «تست محیط» را در تنظیمات بزنید."
+
+msgid "Open Settings & Test Environment"
+msgstr "مشاهده تنظیمات و تست محیط"
+
+msgid "You do not have sufficient permissions to modify TW Blocks settings."
+msgstr "شما دسترسی کافی برای تغییر تنظیمات TW Blocks را ندارید."
+
+msgid "CSS cache purged (%s files removed) and base stylesheet rebuilt successfully."
+msgstr "کش CSS پاک‌سازی شد (%s فایل حذف گردید) و استایل پایه مجدداً بیلد شد."
+
+msgid "Settings and design tokens saved. CSS cache was regenerated."
+msgstr "تنظیمات و توکن‌های طراحی ذخیره شدند و کش CSS بازسازی گردید."
+
+msgid "1. CSS Build Engine & Safelist Configuration"
+msgstr "۱. تنظیمات موتور بیلد CSS و Safelist"
+
+msgid "Preferred Build Driver"
+msgstr "انتخاب درایور بیلد"
+
+msgid "Automatic (Recommended: Driver A -> Driver B -> Driver C)"
+msgstr "خودکار (پیشنهادی: Driver A ← Driver B ← Driver C)"
+
+msgid "Remote Build API URL (Driver B)"
+msgstr "آدرس API بیلد از راه دور (Driver B)"
+
+msgid "HMAC Secret Key (Driver B)"
+msgstr "کلید امضای HMAC (Driver B)"
+
+msgid "Inline CSS Threshold (KB)"
+msgstr "آستانهٔ Inline شدن CSS (کیلوبایت)"
+
+msgid "Accepts both Persian and Latin digits (Default: 12 KB). If merged page CSS is under this threshold, it is inlined as <style> instead of <link>."
+msgstr "پشتیبانی از ارقام فارسی و لاتین (پیش‌فرض: ۱۲ کیلوبایت). اگر حجم کل CSS صفحه کمتر از این مقدار باشد، به‌جای <link> به‌صورت <style> درج می‌شود."
+
+msgid "Safelist Classes (Dynamic Utilities)"
+msgstr "کلاس‌های Safelist (کلاس‌های داینامیک)"
+
+msgid "Enter space-separated Tailwind utility classes that are conditionally toggled at runtime. Direction is strictly LTR."
+msgstr "کلاس‌های Tailwind که به‌صورت شرطی در زمان اجرا اضافه می‌شوند را با فاصله وارد کنید (جهت این فیلد اجباراً LTR است)."
+
+msgid "2. Design Tokens (@theme & theme.json Synchronization)"
+msgstr "۲. توکن‌های طراحی (@theme و همگام‌سازی با theme.json)"
+
+msgid "Persian Body Line-Height"
+msgstr "فاصلهٔ خطوط متن فارسی (Line-Height)"
+
+msgid "Recommended range for Persian script is 1.7 to 1.9 (Default: 1.8). Letter-spacing is locked to 0em for Persian text."
+msgstr "برای خوانایی بهینهٔ خط فارسی مقدار ۱.۷ تا ۱.۹ توصیه می‌شود (پیش‌فرض: ۱.۸). فاصلهٔ حروف (letter-spacing) در متن فارسی روی ۰ قفل شده است."
+
+msgid "Custom Persian Font (Local .woff2 Upload)"
+msgstr "فونت فارسی سفارشی (آپلود فایل .woff2 محلی)"
+
+msgid "Font Family Name (e.g. IRANSansX)"
+msgstr "نام خانوادهٔ فونت (مثلاً IRANSansX)"
+
+msgid "Select / Upload WOFF2"
+msgstr "انتخاب / آپلود WOFF2"
+
+msgid "Select or Upload WOFF2 Font File"
+msgstr "انتخاب یا آپلود فایل فونت WOFF2"
+
+msgid "Use This Font"
+msgstr "استفاده از این فونت"
+
+msgid "When empty, self-hosted Vazirmatn Variable (woff2) is loaded locally with font-display: swap and zero external CDN requests."
+msgstr "در صورت خالی بودن، فونت متغیر محلی Vazirmatn با font-display: swap و بدون هیچ درخواستی به CDN خارجی بارگذاری می‌شود."
+
+msgid "Primary Container Max-Width"
+msgstr "حداکثر عرض Container اصلی"
+
+msgid "3. Persian Localization, Jalali Calendar & Core Optimization"
+msgstr "۳. بومی‌سازی فارسی، تقویم شمسی و بهینه‌سازی هستهٔ وردپرس"
+
+msgid "Persian Digits & Jalali Date"
+msgstr "ارقام فارسی و تاریخ شمسی"
+
+msgid "Convert dynamic block numerals to Persian digits (۰-۹) via twb_localize_digits()"
+msgstr "تبدیل خودکار اعداد بلوک‌های دینامیک به ارقام فارسی (۰-۹) با تابع twb_localize_digits()"
+
+msgid "Display Jalali (Shamsi) dates in dynamic blocks (uses WP-Parsidate if active, or built-in converter)"
+msgstr "نمایش تاریخ شمسی (جلالی) در بلوک‌های دینامیک (استفاده از WP-Parsidate در صورت فعال بودن، یا مبدل داخلی سبک)"
+
+msgid "WordPress Core CSS Optimization"
+msgstr "بهینه‌سازی CSS هستهٔ وردپرس"
+
+msgid "Disable WordPress global-styles inline CSS (for sites built exclusively with TW Blocks)"
+msgstr "غیرفعال‌سازی global-styles وردپرس (مخصوص سایت‌هایی که فقط از بلوک‌های TW Blocks استفاده می‌کنند)"
+
+msgid "Dequeue core wp-block-library.css on the front-end"
+msgstr "حذف فایل wp-block-library.css هستهٔ وردپرس در فرانت‌اند"
+
+msgid "Save Settings & Rebuild CSS"
+msgstr "ذخیرهٔ تنظیمات و بازسازی CSS"
+
+msgid "Cache HIT"
+msgstr "کش فعال (HIT)"
+
+msgid "Cache MISS (Rebuilt)"
+msgstr "بیلد جدید (MISS)"
+
+msgid "TW Blocks: %1$s KB · %2$s"
+msgstr "TW Blocks: %1$s کیلوبایت · %2$s"
+
+msgid "None"
+msgstr "بدون فایل"
+
+msgid "Inline (<style> under 12KB threshold)"
+msgstr "درون‌خطی (<style> زیر آستانهٔ ۱۲ کیلوبایت)"
+
+msgid "Static File (<link>)"
+msgstr "فایل کش استاتیک (<link>)"
+
+msgid "Loaded CSS File(s): %s"
+msgstr "فایل(های) CSS لودشده: %s"
+
+msgid "Delivery Mode: %s"
+msgstr "روش تحویل: %s"
+
+msgid "Total CSS Size: %s KB"
+msgstr "حجم کل CSS: %s کیلوبایت"
+
+msgid "Extracted Classes: %s"
+msgstr "تعداد کلاس‌های استخراج‌شده: %s"
+
+msgid "Build Driver: %s"
+msgstr "درایور بیلد: %s"
+
+msgid "Build Time: %s ms"
+msgstr "زمان بیلد: %s میلی‌ثانیه"
+
+msgid "Cache Status: %s"
+msgstr "وضعیت کش: %s"
+
+msgid "TW Blocks — Tailwind CSS v4"
+msgstr "بلوک‌های TW Blocks — تیلویند نسخهٔ ۴"
+
+msgid "Too many preview compile requests. Please wait a moment."
+msgstr "تعداد درخواست‌های کامپایل پیش‌نمایش بیش از حد مجاز است. لطفاً چند لحظه صبر کنید."
+
+msgid "Too many environment test requests. Please wait a moment."
+msgstr "تعداد درخواست‌های تست محیط بیش از حد مجاز است. لطفاً چند لحظه صبر کنید."
+
+msgid "Section Container"
+msgstr "بخش و کانتینر (Section)"
+
+msgid "Grid & Flex Layout"
+msgstr "شبکه و چیدمان (Grid / Flex)"
+
+msgid "Heading (H1–H6)"
+msgstr "تیتر سئومحور (H1 تا H6)"
+
+msgid "Rich Text Paragraph"
+msgstr "پاراگراف متنی فارسی"
+
+msgid "Action Button"
+msgstr "دکمهٔ فراخوان (Button)"
+
+msgid "SEO Image (Zero-CLS)"
+msgstr "تصویر سئومحور (بدون پرش CLS)"
+
+msgid "Inline SVG Icon"
+msgstr "آیکون SVG درون‌خطی"
+
+msgid "Vertical Spacer"
+msgstr "فاصله‌انداز عمودی (Spacer)"
+
+msgid "Horizontal Divider"
+msgstr "خط جداکننده (Divider)"
+
+msgid "FAQ Accordion (Zero-JS + Schema)"
+msgstr "سوالات متداول آکاردئونی (بدون JS + اسکیما)"
+
+msgid "Accessible Tabs"
+msgstr "زبانه‌های دسترس‌پذیر (Tabs)"
+
+msgid "Feature Card"
+msgstr "کارت ویژگی (Card)"
+
+msgid "Icon Box"
+msgstr "جعبهٔ آیکون‌دار (Icon Box)"
+
+msgid "Dynamic Post Grid (Jalali & Persian Digits)"
+msgstr "شبکهٔ پویای نوشته‌ها (تاریخ شمسی و ارقام فارسی)"
+
+msgid "Base (All)"
+msgstr "پایه (همهٔ صفحات)"
+
+msgid "Tailwind CSS v4 Classes (RTL-First)"
+msgstr "کلاس‌های Tailwind CSS v4 (اولویت RTL)"
+
+msgid "Breakpoint Scope & Device Preview:"
+msgstr "محدودهٔ Breakpoint و پیش‌نمایش دستگاه:"
+
+msgid "Tailwind Utility Classes (Base)"
+msgstr "کلاس‌های پایهٔ Tailwind"
+
+msgid "Responsive Utilities for"
+msgstr "کلاس‌های واکنش‌گرا برای"
+
+msgid "Always typed in LTR. Use logical properties (ms-, me-, ps-, pe-, text-start, text-end)."
+msgstr "همیشه به‌صورت چپ‌به‌راست (LTR) تایپ می‌شود. از ویژگی‌های منطقی (ms-، me-، ps-، pe-، text-start) استفاده کنید."
+
+msgid "Physical directional class detected! Replace ml-/mr-/pl-/pr-/left-/right-/text-left with logical ms-/me-/ps-/pe-/start-/end-/text-start:"
+msgstr "کلاس جهت‌دار فیزیکی شناسایی شد! لطفاً به‌جای ml-/mr-/pl-/pr-/left-/right-/text-left از معادل منطقی ms-/me-/ps-/pe-/start-/end-/text-start استفاده کنید:"
+
+msgid "Filter Autocomplete Suggestions"
+msgstr "جست‌وجو در پیشنهادهای خودکار کلاس‌ها"
+
+msgid "Interactive State Variants (hover / focus / dark / rtl):"
+msgstr "حالت‌های تعاملی (hover / focus / dark / rtl):"
+
+msgid "Utilities for State"
+msgstr "کلاس‌ها برای حالت"
+
+msgid "Logical Spacing Presets (Writes Utility Classes):"
+msgstr "فاصله‌گذاری منطقی آماده (افزودن کلاس):"
+
+msgid "Persian Typography & Logical Alignment:"
+msgstr "تایپوگرافی فارسی و تراز منطقی:"
+
+msgid "Design Token Colors & RTL Helpers:"
+msgstr "توکن‌های رنگ و ابزارهای RTL:"
+
+msgid "Section Settings"
+msgstr "تنظیمات بخش (Section)"
+
+msgid "Semantic HTML Tag"
+msgstr "تگ معنایی HTML"
+
+msgid "Max Width Token"
+msgstr "توکن حداکثر عرض"
+
+msgid "Background Variant"
+msgstr "نوع پس‌زمینه"
+
+msgid "Surface (--color-surface)"
+msgstr "سطح روشن (--color-surface)"
+
+msgid "White"
+msgstr "سفید"
+
+msgid "Primary (--color-primary)"
+msgstr "رنگ اصلی (--color-primary)"
+
+msgid "Secondary (--color-secondary)"
+msgstr "رنگ ثانویه (--color-secondary)"
+
+msgid "Transparent"
+msgstr "شفاف"
+
+msgid "Hide on Mobile (< md)"
+msgstr "مخفی‌سازی در موبایل (زیر md)"
+
+msgid "Hide on Desktop (>= md)"
+msgstr "مخفی‌سازی در دسکتاپ (md به بالا)"
+
+msgid "Grid & Flex Settings"
+msgstr "تنظیمات شبکه و فلکس"
+
+msgid "Layout Mode"
+msgstr "حالت چیدمان"
+
+msgid "Columns on Desktop (lg:)"
+msgstr "تعداد ستون در دسکتاپ (lg:)"
+
+msgid "Gap Token"
+msgstr "فاصلهٔ بین ستون‌ها (Gap)"
+
+msgid "TW Blocks — Persian Patterns (RTL)"
+msgstr "الگوهای آمادهٔ فارسی TW Blocks (راست‌به‌چپ)"
+
+msgid "Ready-to-use, SEO-first Persian block patterns styled with Tailwind CSS v4 logical properties."
+msgstr "الگوهای بلوکی آماده و سئومحور فارسی بر پایهٔ ویژگی‌های منطقی Tailwind CSS v4."
+
+msgid "Persian Hero Section with Dual CTA"
+msgstr "بخش معرفی محصول (Hero فارسی) با دو دکمه و آمار"
+
+msgid "RTL-first hero section featuring a badge, H1 Persian headline, lead paragraph, primary/secondary action buttons, and localized performance statistics."
+msgstr "بخش هدر راست‌به‌چپ شامل تیتر اصلی H1 فارسی، پاراگراف معرفی، دکمه‌های اصلی و ثانویه و کارت‌های آمار عملکرد."
+
+msgid "3-Column Persian Features Grid"
+msgstr "شبکهٔ ۳ ستونهٔ ویژگی‌ها با آیکون SVG"
+
+msgid "Three-column responsive feature showcase built with semantic Section, Grid, and sanitized SVG Icon Box blocks."
+msgstr "نمایش ۳ ستونه و واکنش‌گرای ویژگی‌ها با بلوک‌های Section، Grid و Icon Box ایمن."
+
+msgid "Persian Pricing Plans (Toman)"
+msgstr "جدول تعرفه و پلن‌های اشتراک (تومان)"
+
+msgid "Three-tier Persian subscription pricing table with localized numerals, highlighted middle tier, and logical borders."
+msgstr "جدول سه سطحی قیمت‌گذاری به تومان با ارقام فارسی و برجسته‌سازی پلن پیشنهادی."
+
+msgid "SEO FAQ Section with JSON-LD Schema"
+msgstr "بخش سوالات متداول سئومحور با اسکیمای JSON-LD"
+
+msgid "Zero-JS Persian Frequently Asked Questions section with native <details>/<summary> and automatic UTF-8 FAQPage structured data."
+msgstr "بخش سوالات متداول بدون جاوااسکریپت با تگ‌های <details>/<summary> و تولید خودکار اسکیمای FAQPage."
+
+msgid "RTL Call-to-Action Banner"
+msgstr "بنر فراخوان اقدام (CTA راست‌به‌چپ)"
+
+msgid "High-contrast call-to-action banner with Persian typography and mirrored directional button icon."
+msgstr "بنر فراخوان اقدام با کنتراست بالا، تایپوگرافی فارسی و آیکون فلش آینه‌ای در RTL."
+
+msgid "Latest Blog Posts with Jalali Date"
+msgstr "ویترین آخرین نوشته‌ها با تاریخ شمسی"
+
+msgid "Server-side rendered blog post showcase displaying Jalali (Shamsi) publication dates and localized Persian numerals."
+msgstr "نمایش آخرین مقاله‌های وبلاگ با تاریخ انتشار شمسی (جلالی) و ارقام فارسی."
+
+msgid "Import file exceeds the 256 KB security limit."
+msgstr "حجم فایل ورودی بیش از سقف امنیتی ۲۵۶ کیلوبایت است."
+
+msgid "Invalid TW Blocks export JSON format."
+msgstr "فرمت فایل JSON ورودی برای افزونهٔ TW Blocks معتبر نیست."
+
+msgid "Design tokens and settings imported successfully. CSS cache was regenerated."
+msgstr "توکن‌های طراحی و تنظیمات با موفقیت درون‌ریزی شدند و کش CSS بازسازی گردید."
+
+msgid "Too many import attempts. Please wait a moment."
+msgstr "تعداد تلاش‌های درون‌ریزی بیش از حد مجاز است. لطفاً چند لحظه صبر کنید."
+
+

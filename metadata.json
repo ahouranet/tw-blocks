@@ -1,0 +1,6 @@
+{
+  "name": "TW Blocks — WordPress Tailwind v4 Plugin Architecture (Phase 1)",
+  "description": "معماری فاز ۱ افزونه وردپرس TW Blocks مبتنی بر گوتنبرگ و Tailwind CSS v4 با پشتیبانی کامل فارسی، RTL، تقویم شمسی و موتور بیلد هوشمند ۳ درایوره.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "tw-blocks/text",
+  "version": "1.0.0",
+  "title": "Rich Text Paragraph",
+  "category": "tw-blocks",
+  "icon": "editor-paragraph",
+  "description": "Persian-optimized rich text paragraph with generous line-height (1.8), zero letter-spacing, and logical text alignment.",
+  "keywords": ["text", "paragraph", "copy"],
+  "textdomain": "tw-blocks",
+  "supports": {
+    "html": false,
+    "anchor": true
+  },
+  "attributes": {
+    "content": {
+      "type": "string",
+      "default": "افزونهٔ «TW Blocks» تنها کلاس‌های واقعاً استفاده‌شده در هر صفحه را به‌صورت استاتیک کامپایل و کش می‌کند؛ بدون هیچ وابستگی به CDN خارجی و با پشتیبانی کامل از تقویم شمسی و فونت وزیرمتن."
+    },
+    "textAlign": {
+      "type": "string",
+      "default": "text-start"
+    },
+    "twClasses": {
+      "type": "string",
+      "default": "text-base leading-relaxed text-slate-600 mb-6"
+    },
+    "twResponsive": {
+      "type": "object",
+      "default": {}
+    },
+    "twStates": {
+      "type": "object",
+      "default": {}
+    }
+  },
+  "editorScript": "tw-blocks-editor",
+  "render": "file:./render.php"
+}

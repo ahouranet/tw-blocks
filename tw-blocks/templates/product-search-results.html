@@ -1,0 +1,20 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:tw-blocks/section {"tagName":"main","maxWidth":"max-w-7xl","paddingY":"py-12","paddingX":"px-6","bgVariant":"surface","twClasses":"space-y-8"} -->
+	<!-- wp:query-title {"type":"search","className":"text-2xl font-extrabold text-slate-900 text-start m-0"} /-->
+	<!-- wp:search {"label":"جستجوی مجدد در محصولات","placeholder":"نام کالا، برند یا مدل را وارد کنید…","buttonText":"جستجو","postTypes":["product"]} /-->
+
+	<!-- wp:woocommerce/product-collection {"query":{"perPage":12,"pages":0,"offset":0,"postType":"product","order":"desc","orderBy":"date","inherit":true},"displayLayout":{"type":"flex","columns":4}} -->
+		<!-- wp:woocommerce/product-template {"className":"twb-wc-product-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 list-none p-0 m-0"} -->
+			<!-- wp:tw-blocks/section {"tagName":"article","paddingY":"py-4","paddingX":"px-4","bgVariant":"white","twClasses":"rounded-2xl border border-slate-200 bg-white shadow-xs hover:shadow-md transition flex flex-col justify-between gap-3 h-full text-start relative"} -->
+				<!-- wp:woocommerce/product-image {"showSaleBadge":false,"imageSizing":"thumbnail","className":"rounded-xl overflow-hidden aspect-square w-full object-cover m-0"} /-->
+				<!-- wp:post-title {"level":3,"isLink":true,"className":"text-sm font-bold text-slate-900 leading-snug hover:text-teal-700 transition m-0"} /-->
+				<!-- wp:woocommerce/product-price {"className":"text-base font-extrabold text-teal-700 m-0"} /-->
+				<!-- wp:woocommerce/product-button {"className":"w-full pt-2"} /-->
+			<!-- /wp:tw-blocks/section -->
+		<!-- /wp:woocommerce/product-template -->
+		<!-- wp:query-pagination {"className":"flex items-center justify-center gap-2 pt-8"} /-->
+	<!-- /wp:woocommerce/product-collection -->
+<!-- /wp:tw-blocks/section -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

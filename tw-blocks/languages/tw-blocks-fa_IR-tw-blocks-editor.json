@@ -1,0 +1,61 @@
+{
+  "translation-revision-date": "2026-11-06 00:00+0330",
+  "generator": "WP-CLI/2.11.0",
+  "source": "build/editor/index.js",
+  "domain": "tw-blocks",
+  "locale_data": {
+    "tw-blocks": {
+      "": {
+        "domain": "tw-blocks",
+        "lang": "fa_IR",
+        "plural-forms": "nplurals=2; plural=(n==0 || n==1);"
+      },
+      "Section Container": ["بخش و کانتینر (Section)"],
+      "Grid & Flex Layout": ["شبکه و چیدمان (Grid / Flex)"],
+      "Heading (H1–H6)": ["تیتر سئومحور (H1 تا H6)"],
+      "Rich Text Paragraph": ["پاراگراف متنی فارسی"],
+      "Action Button": ["دکمهٔ فراخوان (Button)"],
+      "SEO Image (Zero-CLS)": ["تصویر سئومحور (بدون پرش CLS)"],
+      "Inline SVG Icon": ["آیکون SVG درون‌خطی"],
+      "Vertical Spacer": ["فاصله‌انداز عمودی (Spacer)"],
+      "Horizontal Divider": ["خط جداکننده (Divider)"],
+      "FAQ Accordion (Zero-JS + Schema)": ["سوالات متداول آکاردئونی (بدون JS + اسکیما)"],
+      "Accessible Tabs": ["زبانه‌های دسترس‌پذیر (Tabs)"],
+      "Feature Card": ["کارت ویژگی (Card)"],
+      "Icon Box": ["جعبهٔ آیکون‌دار (Icon Box)"],
+      "Dynamic Post Grid (Jalali & Persian Digits)": ["شبکهٔ پویای نوشته‌ها (تاریخ شمسی و ارقام فارسی)"],
+      "Base (All)": ["پایه (همهٔ صفحات)"],
+      "Tailwind CSS v4 Classes (RTL-First)": ["کلاس‌های Tailwind CSS v4 (اولویت RTL)"],
+      "Breakpoint Scope & Device Preview:": ["محدودهٔ Breakpoint و پیش‌نمایش دستگاه:"],
+      "Tailwind Utility Classes (Base)": ["کلاس‌های پایهٔ Tailwind"],
+      "Responsive Utilities for": ["کلاس‌های واکنش‌گرا برای"],
+      "Always typed in LTR. Use logical properties (ms-, me-, ps-, pe-, text-start, text-end).": [
+        "همیشه به‌صورت چپ‌به‌راست (LTR) تایپ می‌شود. از ویژگی‌های منطقی (ms-، me-، ps-، pe-، text-start) استفاده کنید."
+      ],
+      "Physical directional class detected! Replace ml-/mr-/pl-/pr-/left-/right-/text-left with logical ms-/me-/ps-/pe-/start-/end-/text-start:": [
+        "کلاس جهت‌دار فیزیکی شناسایی شد! لطفاً به‌جای ml-/mr-/pl-/pr-/left-/right-/text-left از معادل منطقی ms-/me-/ps-/pe-/start-/end-/text-start استفاده کنید:"
+      ],
+      "Filter Autocomplete Suggestions": ["جست‌وجو در پیشنهادهای خودکار کلاس‌ها"],
+      "Interactive State Variants (hover / focus / dark / rtl):": ["حالت‌های تعاملی (hover / focus / dark / rtl):"],
+      "Utilities for State": ["کلاس‌ها برای حالت"],
+      "Logical Spacing Presets (Writes Utility Classes):": ["فاصله‌گذاری منطقی آماده (افزودن کلاس):"],
+      "Persian Typography & Logical Alignment:": ["تایپوگرافی فارسی و تراز منطقی:"],
+      "Design Token Colors & RTL Helpers:": ["توکن‌های رنگ و ابزارهای RTL:"],
+      "Section Settings": ["تنظیمات بخش (Section)"],
+      "Semantic HTML Tag": ["تگ معنایی HTML"],
+      "Max Width Token": ["توکن حداکثر عرض"],
+      "Background Variant": ["نوع پس‌زمینه"],
+      "Surface (--color-surface)": ["سطح روشن (--color-surface)"],
+      "White": ["سفید"],
+      "Primary (--color-primary)": ["رنگ اصلی (--color-primary)"],
+      "Secondary (--color-secondary)": ["رنگ ثانویه (--color-secondary)"],
+      "Transparent": ["شفاف"],
+      "Hide on Mobile (< md)": ["مخفی‌سازی در موبایل (زیر md)"],
+      "Hide on Desktop (>= md)": ["مخفی‌سازی در دسکتاپ (md به بالا)"],
+      "Grid & Flex Settings": ["تنظیمات شبکه و فلکس"],
+      "Layout Mode": ["حالت چیدمان"],
+      "Columns on Desktop (lg:)": ["تعداد ستون در دسکتاپ (lg:)"],
+      "Gap Token": ["فاصلهٔ بین ستون‌ها (Gap)"]
+    }
+  }
+}

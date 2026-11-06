@@ -1,0 +1,57 @@
+/**
+ * TW Blocks Scoped Preflight-Lite (.twb-root)
+ * Minimal reset scoped strictly to block wrappers so the active WordPress theme is never broken.
+ * Enforces Persian typography rules (line-height: 1.8, letter-spacing: 0em) and logical properties.
+ */
+
+.twb-root,
+.twb-root *,
+.twb-root *::before,
+.twb-root *::after {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: var(--twb-color-border, #e2e8f0);
+}
+
+.twb-root {
+  font-family: var(--twb-font-sans, Vazirmatn, Tahoma, system-ui, sans-serif);
+  line-height: var(--twb-line-height-body, 1.8);
+  letter-spacing: 0em;
+  color: var(--twb-color-foreground, #0f172a);
+  -webkit-text-size-adjust: 100%;
+  tab-size: 4;
+}
+
+.twb-root :where(h1, h2, h3, h4, h5, h6) {
+  font-family: var(--twb-font-heading, Vazirmatn, Tahoma, system-ui, sans-serif);
+  line-height: var(--twb-line-height-heading, 1.4);
+  letter-spacing: 0em;
+  font-weight: 700;
+  margin-block: 0;
+}
+
+.twb-root :where(p, ul, ol, dl, blockquote, figure, pre) {
+  margin-block: 0;
+}
+
+.twb-root :where(img, svg, video, canvas) {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.twb-root :where(button, input, optgroup, select, textarea) {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+/* Automatic RTL icon mirroring for directional arrows/chevrons */
+[dir="rtl"] .twb-root .twb-rtl-mirror,
+[dir="rtl"] .twb-root .rtl\:-scale-x-100 {
+  transform: scaleX(-1);
+}

@@ -1,0 +1,51 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "tw-blocks/faq",
+  "version": "1.0.0",
+  "title": "FAQ Accordion (Zero-JS + Schema)",
+  "category": "tw-blocks",
+  "icon": "editor-help",
+  "description": "Accessible zero-JavaScript FAQ accordion using native <details>/<summary> with automatic UTF-8 FAQPage JSON-LD structured data.",
+  "keywords": ["faq", "accordion", "schema", "questions"],
+  "textdomain": "tw-blocks",
+  "supports": {
+    "html": false,
+    "anchor": true
+  },
+  "attributes": {
+    "enableSchema": {
+      "type": "boolean",
+      "default": true
+    },
+    "items": {
+      "type": "array",
+      "default": [
+        {
+          "question": "چرا افزونهٔ TW Blocks هیچ فایل جاوااسکریپتی در فرانت‌اند برای آکاردئون بارگذاری نمی‌کند؟",
+          "answer": "بلوک سوالات متداول از تگ‌های استاندارد و بومی <details> و <summary> در HTML5 استفاده می‌کند که بدون حتی یک بایت جاوااسکریپت، دسترس‌پذیری کیبورد و سرعت کامل را فراهم می‌سازد.",
+          "openByDefault": true
+        },
+        {
+          "question": "آیا استایل‌های Tailwind روی سرورهای اشتراکی ایران بدون Node.js کار می‌کنند؟",
+          "answer": "بله؛ معماری ۳ درایورهٔ افزونه در صورت نبود باینری محلی یا سرویس ابری، به‌طور خودکار روی Driver C (Safelist بهینه‌شده) سوییچ می‌کند تا سایت در هیچ شرایطی بدون استایل نماند.",
+          "openByDefault": false
+        }
+      ]
+    },
+    "twClasses": {
+      "type": "string",
+      "default": "flex flex-col gap-4"
+    },
+    "twResponsive": {
+      "type": "object",
+      "default": {}
+    },
+    "twStates": {
+      "type": "object",
+      "default": {}
+    }
+  },
+  "editorScript": "tw-blocks-editor",
+  "render": "file:./render.php"
+}

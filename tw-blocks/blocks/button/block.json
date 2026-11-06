@@ -1,0 +1,54 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "tw-blocks/button",
+  "version": "1.0.0",
+  "title": "Action Button",
+  "category": "tw-blocks",
+  "icon": "button",
+  "description": "Accessible button/link with variants, logical spacing, and automatic directional icon mirroring in RTL (`rtl:-scale-x-100`).",
+  "keywords": ["button", "cta", "link"],
+  "textdomain": "tw-blocks",
+  "supports": {
+    "html": false,
+    "anchor": true
+  },
+  "attributes": {
+    "label": {
+      "type": "string",
+      "default": "شروع رایگان"
+    },
+    "url": {
+      "type": "string",
+      "default": "#start"
+    },
+    "variant": {
+      "type": "string",
+      "default": "primary"
+    },
+    "openInNewTab": {
+      "type": "boolean",
+      "default": false
+    },
+    "showArrowIcon": {
+      "type": "boolean",
+      "default": true
+    },
+    "twClasses": {
+      "type": "string",
+      "default": "px-6 py-3 rounded-lg font-semibold shadow-sm"
+    },
+    "twResponsive": {
+      "type": "object",
+      "default": {}
+    },
+    "twStates": {
+      "type": "object",
+      "default": {
+        "focus": "ring-2"
+      }
+    }
+  },
+  "editorScript": "tw-blocks-editor",
+  "render": "file:./render.php"
+}

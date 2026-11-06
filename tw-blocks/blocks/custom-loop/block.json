@@ -1,0 +1,79 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "tw-blocks/custom-loop",
+  "version": "1.0.0",
+  "title": "حلقهٔ کوئری سفارشی (Custom Loop + InnerBlocks)",
+  "category": "tw-blocks",
+  "icon": "networking",
+  "description": "حلقهٔ سفارشی با تنظیمات پیشرفتهٔ WP_Query، قالب آیتم دلخواه کاربر (InnerBlocks)، چیدمان شبکه/لیست و صفحه‌بندی یا بارگذاری بیشتر.",
+  "keywords": ["loop", "query", "posts", "products", "حلقه", "کوئری"],
+  "textdomain": "tw-blocks",
+  "providesContext": {
+    "postType": "postType"
+  },
+  "attributes": {
+    "postType": {
+      "type": "string",
+      "default": "post"
+    },
+    "postsPerPage": {
+      "type": "number",
+      "default": 6
+    },
+    "offset": {
+      "type": "number",
+      "default": 0
+    },
+    "orderBy": {
+      "type": "string",
+      "default": "date"
+    },
+    "orderByMeta": {
+      "type": "string",
+      "default": ""
+    },
+    "featuredOnly": {
+      "type": "boolean",
+      "default": false
+    },
+    "excludeCurrent": {
+      "type": "boolean",
+      "default": true
+    },
+    "layoutMode": {
+      "type": "string",
+      "default": "grid"
+    },
+    "colsSm": {
+      "type": "number",
+      "default": 1
+    },
+    "colsMd": {
+      "type": "number",
+      "default": 2
+    },
+    "colsLg": {
+      "type": "number",
+      "default": 3
+    },
+    "gap": {
+      "type": "string",
+      "default": "gap-6"
+    },
+    "paginationMode": {
+      "type": "string",
+      "default": "numbers"
+    },
+    "loadMoreLabel": {
+      "type": "string",
+      "default": "بارگذاری مطالب بیشتر"
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": ["wide", "full"]
+  },
+  "editorScript": "file:../../build/editor/index.js",
+  "render": "file:./render.php"
+}

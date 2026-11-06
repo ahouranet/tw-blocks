@@ -1,0 +1,113 @@
+/**
+ * TW Blocks Admin Settings Page RTL Stylesheet
+ * Strictly uses CSS Logical Properties (`margin-inline-*`, `padding-inline-*`, `text-align: start`).
+ * Enforces `dir="ltr"` and `text-align: left` on code/Tailwind class inputs.
+ */
+
+.twb-admin-wrap {
+  max-width: 1120px;
+  margin-block-start: 20px;
+  font-family: Vazirmatn, Tahoma, system-ui, sans-serif;
+  line-height: 1.8;
+}
+
+.twb-admin-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-block-end: 20px;
+  padding-block-end: 16px;
+  border-block-end: 1px solid #cbd5e1;
+}
+
+.twb-card {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 20px 24px;
+  margin-block-end: 20px;
+}
+
+.twb-card h2 {
+  margin-block-start: 0;
+  padding-block-end: 12px;
+  border-block-end: 1px solid #e2e8f0;
+  font-size: 1.15rem;
+}
+
+.twb-driver-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+  margin-block-start: 16px;
+}
+
+.twb-driver-box {
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  padding: 16px;
+  background: #f8fafc;
+}
+
+.twb-driver-box.is-available {
+  border-color: #0d9488;
+  background: #f0fdfa;
+}
+
+.twb-driver-box h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-block-start: 0;
+  margin-block-end: 10px;
+  font-size: 0.95rem;
+}
+
+.twb-status-text {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #0f766e;
+}
+
+.twb-driver-box.is-unavailable .twb-status-text {
+  color: #64748b;
+}
+
+.twb-driver-box ul {
+  margin: 0;
+  padding-inline-start: 16px;
+  font-size: 0.85rem;
+}
+
+.twb-tokens-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 14px;
+  margin-block: 16px;
+}
+
+.twb-token-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.twb-token-field label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+/* Mandatory LTR and left alignment for Tailwind class, URL, and token code inputs */
+.twb-code-input,
+input.twb-code-input,
+textarea.twb-code-input {
+  direction: ltr !important;
+  text-align: left !important;
+  unicode-bidi: embed;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}

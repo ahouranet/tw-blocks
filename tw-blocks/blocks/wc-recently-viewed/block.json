@@ -1,0 +1,32 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "tw-blocks/wc-recently-viewed",
+  "version": "1.0.0",
+  "title": "محصولات اخیراً دیده‌شدهٔ ووکامرس",
+  "category": "tw-blocks",
+  "icon": "visibility",
+  "description": "نمایش خودکار محصولات اخیراً مشاهده‌شده توسط کاربر بر اساس کوکی استاندارد ووکامرس با کارت‌های راست‌به‌چپ Tailwind.",
+  "keywords": ["woocommerce", "recently viewed", "products", "اخیراً دیده‌شده", "محصولات"],
+  "textdomain": "tw-blocks",
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "محصولاتی که اخیراً مشاهده کرده‌اید"
+    },
+    "postsToShow": {
+      "type": "number",
+      "default": 4
+    },
+    "columns": {
+      "type": "number",
+      "default": 4
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": ["wide", "full"]
+  },
+  "editorScript": "file:../../build/editor/index.js",
+  "render": "file:./render.php"
+}

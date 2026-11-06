@@ -1,0 +1,60 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "tw-blocks/grid",
+  "version": "1.0.0",
+  "title": "Grid & Flex Layout",
+  "category": "tw-blocks",
+  "icon": "grid-view",
+  "description": "Responsive CSS Grid or Flexbox layout with static breakpoint column maps, gap tokens, and logical alignment.",
+  "keywords": ["grid", "flex", "columns", "row"],
+  "textdomain": "tw-blocks",
+  "supports": {
+    "html": false,
+    "anchor": true
+  },
+  "attributes": {
+    "layoutMode": {
+      "type": "string",
+      "default": "grid"
+    },
+    "colsBase": {
+      "type": "number",
+      "default": 1
+    },
+    "colsMd": {
+      "type": "number",
+      "default": 2
+    },
+    "colsLg": {
+      "type": "number",
+      "default": 3
+    },
+    "gap": {
+      "type": "string",
+      "default": "gap-6"
+    },
+    "alignItems": {
+      "type": "string",
+      "default": "items-stretch"
+    },
+    "justifyContent": {
+      "type": "string",
+      "default": "justify-between"
+    },
+    "twClasses": {
+      "type": "string",
+      "default": ""
+    },
+    "twResponsive": {
+      "type": "object",
+      "default": {}
+    },
+    "twStates": {
+      "type": "object",
+      "default": {}
+    }
+  },
+  "editorScript": "tw-blocks-editor",
+  "render": "file:./render.php"
+}

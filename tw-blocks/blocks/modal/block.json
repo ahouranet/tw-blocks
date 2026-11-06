@@ -1,0 +1,32 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "tw-blocks/modal",
+  "version": "1.0.0",
+  "title": "پنجرهٔ مودال بومی (HTML5 Dialog Modal)",
+  "category": "tw-blocks",
+  "icon": "welcome-view-site",
+  "description": "پنجرهٔ مودال دسترس‌پذیر بر پایهٔ تگ استاندارد <dialog> با فوکوس خودکار، بستن با کلید ESC یا کلیک روی پس‌زمینه و جاوااسکریپت زیر ۱ کیلوبایت.",
+  "keywords": ["modal", "dialog", "popup", "مودال", "پاپ‌آپ"],
+  "textdomain": "tw-blocks",
+  "attributes": {
+    "triggerLabel": {
+      "type": "string",
+      "default": "مشاهدهٔ راهنمای کامل"
+    },
+    "modalTitle": {
+      "type": "string",
+      "default": "راهنمای انتخاب پلن و راه‌اندازی سریع"
+    },
+    "modalWidth": {
+      "type": "string",
+      "default": "max-w-lg"
+    }
+  },
+  "supports": {
+    "html": false
+  },
+  "editorScript": "file:../../build/editor/index.js",
+  "viewScript": "file:./view.js",
+  "render": "file:./render.php"
+}

@@ -1,0 +1,44 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "tw-blocks/icon-box",
+  "version": "1.0.0",
+  "title": "Icon Box",
+  "category": "tw-blocks",
+  "icon": "awards",
+  "description": "Feature box combining an inline SVG icon, Persian title, and description with logical flex alignment.",
+  "keywords": ["icon-box", "feature", "service"],
+  "textdomain": "tw-blocks",
+  "supports": {
+    "html": false,
+    "anchor": true
+  },
+  "attributes": {
+    "iconName": {
+      "type": "string",
+      "default": "shield"
+    },
+    "title": {
+      "type": "string",
+      "default": "امنیت چندلایه و محافظت در برابر تزریق کد"
+    },
+    "description": {
+      "type": "string",
+      "default": "تمامی کلاس‌های Tailwind، آیکون‌های SVG و فایل‌های فونت با لیست سفید و امضای باینری اعتبارسنجی می‌شوند."
+    },
+    "twClasses": {
+      "type": "string",
+      "default": "flex items-start gap-4 rounded-xl border border-slate-200 bg-white p-5 shadow-sm"
+    },
+    "twResponsive": {
+      "type": "object",
+      "default": {}
+    },
+    "twStates": {
+      "type": "object",
+      "default": {}
+    }
+  },
+  "editorScript": "tw-blocks-editor",
+  "render": "file:./render.php"
+}

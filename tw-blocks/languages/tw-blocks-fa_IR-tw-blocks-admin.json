@@ -1,0 +1,30 @@
+{
+  "translation-revision-date": "2026-11-06 00:00+0330",
+  "generator": "WP-CLI/2.11.0",
+  "source": "assets/js/admin-settings.js",
+  "domain": "messages",
+  "locale_data": {
+    "messages": {
+      "": {
+        "domain": "messages",
+        "lang": "fa_IR",
+        "plural-forms": "nplurals=2; plural=(n==0 || n==1);"
+      },
+      "Testing host environment...": [
+        "در حال بررسی محیط هاست..."
+      ],
+      "Ready": [
+        "آماده"
+      ],
+      "Unavailable": [
+        "غیرفعال"
+      ],
+      "Select or Upload WOFF2 Font File": [
+        "انتخاب یا آپلود فایل فونت WOFF2"
+      ],
+      "Use This Font": [
+        "استفاده از این فونت"
+      ]
+    }
+  }
+}

@@ -1,0 +1,143 @@
+/**
+ * TW Blocks Driver C — Bundled Safelist Fallback Stylesheet
+ * Used when neither Local Binary (Driver A) nor Remote API (Driver B) is available on shared cPanel hosting.
+ * Strict Logical Properties (ms-, me-, ps-, pe-, start-, end-, text-start, text-end, border-s, rounded-s).
+ */
+
+.block{display:block}
+.inline-block{display:inline-block}
+.inline{display:inline}
+.flex{display:flex}
+.inline-flex{display:inline-flex}
+.grid{display:grid}
+.hidden{display:none}
+
+.flex-row{flex-direction:row}
+.flex-col{flex-direction:column}
+.flex-wrap{flex-wrap:wrap}
+.items-start{align-items:flex-start}
+.items-center{align-items:center}
+.items-end{align-items:flex-end}
+.items-stretch{align-items:stretch}
+.justify-start{justify-content:flex-start}
+.justify-center{justify-content:center}
+.justify-end{justify-content:flex-end}
+.justify-between{justify-content:space-between}
+
+.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}
+.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}
+
+.gap-2{gap:0.5rem}
+.gap-3{gap:0.75rem}
+.gap-4{gap:1rem}
+.gap-6{gap:1.5rem}
+.gap-8{gap:2rem}
+.gap-10{gap:2.5rem}
+.gap-12{gap:3rem}
+
+/* Logical Margin & Padding (RTL/LTR Native) */
+.mx-auto{margin-inline:auto}
+.ms-auto{margin-inline-start:auto}
+.me-auto{margin-inline-end:auto}
+.ms-2{margin-inline-start:0.5rem}
+.me-2{margin-inline-end:0.5rem}
+.ms-4{margin-inline-start:1rem}
+.me-4{margin-inline-end:1rem}
+.mt-2{margin-block-start:0.5rem}
+.mt-4{margin-block-start:1rem}
+.mt-6{margin-block-start:1.5rem}
+.mt-8{margin-block-start:2rem}
+.mb-2{margin-block-end:0.5rem}
+.mb-4{margin-block-end:1rem}
+.mb-6{margin-block-end:1.5rem}
+.mb-8{margin-block-end:2rem}
+
+.p-4{padding:1rem}
+.p-6{padding:1.5rem}
+.p-8{padding:2rem}
+.px-4{padding-inline:1rem}
+.px-6{padding-inline:1.5rem}
+.px-8{padding-inline:2rem}
+.py-2{padding-block:0.5rem}
+.py-3{padding-block:0.75rem}
+.py-4{padding-block:1rem}
+.py-8{padding-block:2rem}
+.py-12{padding-block:3rem}
+.py-16{padding-block:4rem}
+.ps-3{padding-inline-start:0.75rem}
+.pe-3{padding-inline-end:0.75rem}
+.ps-4{padding-inline-start:1rem}
+.pe-4{padding-inline-end:1rem}
+.ps-6{padding-inline-start:1.5rem}
+.pe-6{padding-inline-end:1.5rem}
+
+/* Logical Positioning & Alignment */
+.relative{position:relative}
+.absolute{position:absolute}
+.inset-0{inset:0}
+.start-0{inset-inline-start:0}
+.end-0{inset-inline-end:0}
+.text-start{text-align:start}
+.text-center{text-align:center}
+.text-end{text-align:end}
+
+/* Width & Container */
+.w-full{width:100%}
+.max-w-screen-xl{max-width:var(--twb-container-width,1280px)}
+.max-w-3xl{max-width:var(--twb-content-width,768px)}
+
+/* Typography & Colors linked to Design Tokens */
+.text-xs{font-size:0.75rem}
+.text-sm{font-size:0.875rem}
+.text-base{font-size:1rem}
+.text-lg{font-size:1.125rem}
+.text-xl{font-size:1.25rem}
+.text-2xl{font-size:1.5rem}
+.text-3xl{font-size:1.875rem}
+.text-4xl{font-size:2.25rem}
+.font-normal{font-weight:400}
+.font-medium{font-weight:500}
+.font-semibold{font-weight:600}
+.font-bold{font-weight:700}
+.leading-relaxed{line-height:var(--twb-line-height-body,1.8)}
+.tracking-normal{letter-spacing:0em}
+
+.bg-primary{background-color:var(--twb-color-primary,#0d9488)}
+.bg-secondary{background-color:var(--twb-color-secondary,#0f172a)}
+.bg-surface{background-color:var(--twb-color-surface,#f8fafc)}
+.bg-background{background-color:var(--twb-color-background,#ffffff)}
+.text-primary{color:var(--twb-color-primary,#0d9488)}
+.text-secondary{color:var(--twb-color-secondary,#0f172a)}
+.text-foreground{color:var(--twb-color-foreground,#0f172a)}
+.text-muted{color:var(--twb-color-muted,#475569)}
+.text-white{color:#ffffff}
+
+/* Borders & Logical Radius */
+.border{border-width:1px}
+.border-b{border-block-end-width:1px}
+.border-t{border-block-start-width:1px}
+.border-s{border-inline-start-width:1px}
+.border-e{border-inline-end-width:1px}
+.border-border{border-color:var(--twb-color-border,#e2e8f0)}
+.rounded-sm{border-radius:var(--twb-radius-sm,0.375rem)}
+.rounded-md{border-radius:var(--twb-radius-md,0.5rem)}
+.rounded-lg{border-radius:var(--twb-radius-lg,0.75rem)}
+.rounded-xl{border-radius:var(--twb-radius-xl,1rem)}
+.rounded-s-lg{border-start-start-radius:var(--twb-radius-lg,0.75rem);border-end-start-radius:var(--twb-radius-lg,0.75rem)}
+.rounded-e-lg{border-start-end-radius:var(--twb-radius-lg,0.75rem);border-end-end-radius:var(--twb-radius-lg,0.75rem)}
+.shadow-sm{box-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05)}
+
+@media (min-width: 768px) {
+  .md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .md\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .md\:flex-row{flex-direction:row}
+  .md\:block{display:block}
+  .md\:hidden{display:none}
+}
+
+@media (min-width: 1024px) {
+  .lg\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .lg\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}
+}

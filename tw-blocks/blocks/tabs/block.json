@@ -1,0 +1,54 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "tw-blocks/tabs",
+  "version": "1.0.0",
+  "title": "Accessible Tabs",
+  "category": "tw-blocks",
+  "icon": "index-card",
+  "description": "WAI-ARIA accessible tabs with RTL arrow-key navigation and conditional <1.5KB vanilla viewScript.",
+  "keywords": ["tabs", "panels", "switch"],
+  "textdomain": "tw-blocks",
+  "supports": {
+    "html": false,
+    "anchor": true
+  },
+  "attributes": {
+    "tabs": {
+      "type": "array",
+      "default": [
+        {
+          "title": "کامپایل استاتیک CSS",
+          "content": "تنها کلاس‌های استفاده‌شده در هر برگه استخراج و در فایل استاتیک کش می‌شوند؛ بدون بارگذاری استایل‌های اضافی."
+        },
+        {
+          "title": "بومی‌سازی فارسی و RTL",
+          "content": "پشتیبانی پیش‌فرض از ویژگی‌های منطقی (Logical Properties)، فونت وزیرمتن محلی و تقویم جلالی."
+        },
+        {
+          "title": "امنیت و سئو",
+          "content": "اعتبارسنجی سخت‌گیرانهٔ ورودی‌ها با لیست سفید (Whitelist)، اسکیمای JSON-LD و حذف CLS در تصاویر."
+        }
+      ]
+    },
+    "defaultTab": {
+      "type": "number",
+      "default": 0
+    },
+    "twClasses": {
+      "type": "string",
+      "default": "rounded-xl border border-slate-200 bg-white p-6 shadow-sm"
+    },
+    "twResponsive": {
+      "type": "object",
+      "default": {}
+    },
+    "twStates": {
+      "type": "object",
+      "default": {}
+    }
+  },
+  "editorScript": "tw-blocks-editor",
+  "viewScript": "file:./view.js",
+  "render": "file:./render.php"
+}

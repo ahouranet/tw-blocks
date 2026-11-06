@@ -1,0 +1,48 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "tw-blocks/icon",
+  "version": "1.0.0",
+  "title": "Inline SVG Icon",
+  "category": "tw-blocks",
+  "icon": "star-filled",
+  "description": "Zero-icon-font inline SVG icon with strict XSS sanitization and automatic RTL mirroring option.",
+  "keywords": ["icon", "svg", "symbol"],
+  "textdomain": "tw-blocks",
+  "supports": {
+    "html": false,
+    "anchor": true
+  },
+  "attributes": {
+    "iconName": {
+      "type": "string",
+      "default": "sparkles"
+    },
+    "customSvg": {
+      "type": "string",
+      "default": ""
+    },
+    "mirrorInRtl": {
+      "type": "boolean",
+      "default": false
+    },
+    "ariaLabel": {
+      "type": "string",
+      "default": ""
+    },
+    "twClasses": {
+      "type": "string",
+      "default": "w-10 h-10 p-2 rounded-lg bg-teal-50 text-primary"
+    },
+    "twResponsive": {
+      "type": "object",
+      "default": {}
+    },
+    "twStates": {
+      "type": "object",
+      "default": {}
+    }
+  },
+  "editorScript": "tw-blocks-editor",
+  "render": "file:./render.php"
+}

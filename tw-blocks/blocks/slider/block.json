@@ -1,0 +1,41 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "tw-blocks/slider",
+  "version": "1.0.0",
+  "title": "اسلایدر بومی (CSS Scroll-Snap)",
+  "category": "tw-blocks",
+  "icon": "slides",
+  "description": "اسلایدر فوق‌سبک بر پایهٔ CSS scroll-snap بدون وابستگی به Swiper، با پشتیبانی کامل از جهت راست‌به‌چپ (RTL) و جاوااسکریپت زیر ۲ کیلوبایت.",
+  "keywords": ["slider", "carousel", "scroll-snap", "اسلایدر", "کاروسل"],
+  "textdomain": "tw-blocks",
+  "attributes": {
+    "slidesPerViewMd": {
+      "type": "number",
+      "default": 2
+    },
+    "slidesPerViewLg": {
+      "type": "number",
+      "default": 3
+    },
+    "gap": {
+      "type": "string",
+      "default": "gap-6"
+    },
+    "showArrows": {
+      "type": "boolean",
+      "default": true
+    },
+    "ariaLabel": {
+      "type": "string",
+      "default": "اسلایدر محتوا"
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": ["wide", "full"]
+  },
+  "editorScript": "file:../../build/editor/index.js",
+  "viewScript": "file:./view.js",
+  "render": "file:./render.php"
+}

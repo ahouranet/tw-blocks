@@ -1,0 +1,28 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:tw-blocks/section {"tagName":"main","maxWidth":"max-w-7xl","paddingY":"py-12","paddingX":"px-6","bgVariant":"surface","twClasses":"space-y-8"} -->
+	<!-- wp:woocommerce/breadcrumbs {"className":"text-xs text-slate-500 mb-2"} /-->
+	<!-- wp:query-title {"type":"archive","showPrefix":false,"className":"text-2xl md:text-3xl font-extrabold text-slate-900 text-start m-0"} /-->
+
+	<!-- wp:pattern {"slug":"tw-blocks/wc-benefits-bar"} /-->
+
+	<!-- wp:tw-blocks/grid {"layoutMode":"flex","gap":"gap-4","alignItems":"items-center","justifyContent":"justify-between","twClasses":"bg-white p-4 rounded-xl border border-slate-200"} -->
+		<!-- wp:woocommerce/product-results-count {"className":"text-xs text-slate-600 m-0"} /-->
+		<!-- wp:woocommerce/catalog-sorting {"className":"text-xs"} /-->
+	<!-- /wp:tw-blocks/grid -->
+
+	<!-- wp:woocommerce/product-collection {"query":{"perPage":12,"pages":0,"offset":0,"postType":"product","order":"desc","orderBy":"date"},"displayLayout":{"type":"flex","columns":4}} -->
+		<!-- wp:woocommerce/product-template {"className":"twb-wc-product-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 list-none p-0 m-0"} -->
+			<!-- wp:tw-blocks/section {"tagName":"article","paddingY":"py-4","paddingX":"px-4","bgVariant":"white","twClasses":"rounded-2xl border border-slate-200 bg-white shadow-xs hover:shadow-md transition flex flex-col justify-between gap-3 h-full text-start relative"} -->
+				<!-- wp:woocommerce/product-image {"showSaleBadge":false,"imageSizing":"thumbnail","className":"rounded-xl overflow-hidden aspect-square w-full object-cover m-0"} /-->
+				<!-- wp:tw-blocks/wc-sale-timer {"showCountdown":false,"twClasses":"absolute top-6 start-6 z-10"} /-->
+				<!-- wp:post-title {"level":3,"isLink":true,"className":"text-sm font-bold text-slate-900 leading-snug hover:text-teal-700 transition m-0"} /-->
+				<!-- wp:woocommerce/product-price {"className":"text-base font-extrabold text-teal-700 m-0"} /-->
+				<!-- wp:woocommerce/product-button {"className":"w-full pt-2"} /-->
+			<!-- /wp:tw-blocks/section -->
+		<!-- /wp:woocommerce/product-template -->
+		<!-- wp:query-pagination {"className":"flex items-center justify-center gap-2 pt-8"} /-->
+	<!-- /wp:woocommerce/product-collection -->
+<!-- /wp:tw-blocks/section -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

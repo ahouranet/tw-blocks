@@ -1,0 +1,61 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "tw-blocks/post-grid",
+  "version": "1.0.0",
+  "title": "Dynamic Post Grid (Jalali & Persian Digits)",
+  "category": "tw-blocks",
+  "icon": "ReadMore",
+  "description": "Server-side rendered dynamic post grid with Jalali (Shamsi) dates, Persian numerals, bounded WP_Query optimization, and logical RTL cards.",
+  "keywords": ["posts", "blog", "grid", "query", "jalali"],
+  "textdomain": "tw-blocks",
+  "supports": {
+    "html": false,
+    "anchor": true,
+    "align": ["wide", "full"]
+  },
+  "attributes": {
+    "postsPerPage": {
+      "type": "number",
+      "default": 3
+    },
+    "columns": {
+      "type": "number",
+      "default": 3
+    },
+    "categoryId": {
+      "type": "number",
+      "default": 0
+    },
+    "showJalaliDate": {
+      "type": "boolean",
+      "default": true
+    },
+    "showExcerpt": {
+      "type": "boolean",
+      "default": true
+    },
+    "showPagination": {
+      "type": "boolean",
+      "default": false
+    },
+    "readMoreLabel": {
+      "type": "string",
+      "default": "ادامهٔ مطلب"
+    },
+    "twClasses": {
+      "type": "string",
+      "default": "gap-6"
+    },
+    "twResponsive": {
+      "type": "object",
+      "default": {}
+    },
+    "twStates": {
+      "type": "object",
+      "default": {}
+    }
+  },
+  "editorScript": "tw-blocks-editor",
+  "render": "file:./render.php"
+}

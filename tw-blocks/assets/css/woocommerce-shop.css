@@ -1,0 +1,30 @@
+/**
+ * Conditional WooCommerce Shop & Single Product Stylesheet (`is_woocommerce()`).
+ * Uses logical RTL properties and TW Blocks Design Tokens (`--twb-*`).
+ */
+.twb-wc-product-grid del {
+	opacity: 0.65;
+	font-size: 0.85em;
+	margin-inline-end: 0.375rem;
+}
+.twb-wc-product-grid ins {
+	text-decoration: none;
+	font-weight: 800;
+	color: var(--twb-color-primary, #0d9488);
+}
+.twb-wc-sticky-buy-bar {
+	position: fixed;
+	inset-inline: 0;
+	bottom: 0;
+	z-index: 40;
+	background: var(--twb-color-background, #ffffff);
+	border-block-start: 1px solid var(--twb-color-border, #e2e8f0);
+	padding-block: 0.75rem;
+	padding-inline: 1rem;
+	box-shadow: 0 -4px 16px rgba(15, 23, 42, 0.08);
+}
+@media (min-width: 768px) {
+	.twb-wc-sticky-buy-bar {
+		display: none;
+	}
+}

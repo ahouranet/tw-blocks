@@ -1,0 +1,61 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "tw-blocks/section",
+  "version": "1.0.0",
+  "title": "Section Container",
+  "category": "tw-blocks",
+  "icon": "align-wide",
+  "description": "Semantic layout section or container with max-width, logical padding, background tokens, and responsive visibility.",
+  "keywords": ["section", "container", "wrapper", "layout"],
+  "textdomain": "tw-blocks",
+  "supports": {
+    "html": false,
+    "anchor": true,
+    "align": ["wide", "full"]
+  },
+  "attributes": {
+    "tagName": {
+      "type": "string",
+      "default": "section"
+    },
+    "maxWidth": {
+      "type": "string",
+      "default": "max-w-7xl"
+    },
+    "paddingY": {
+      "type": "string",
+      "default": "py-16"
+    },
+    "paddingX": {
+      "type": "string",
+      "default": "px-6"
+    },
+    "bgVariant": {
+      "type": "string",
+      "default": "surface"
+    },
+    "hideOnMobile": {
+      "type": "boolean",
+      "default": false
+    },
+    "hideOnDesktop": {
+      "type": "boolean",
+      "default": false
+    },
+    "twClasses": {
+      "type": "string",
+      "default": "rounded-2xl border border-slate-200"
+    },
+    "twResponsive": {
+      "type": "object",
+      "default": {}
+    },
+    "twStates": {
+      "type": "object",
+      "default": {}
+    }
+  },
+  "editorScript": "tw-blocks-editor",
+  "render": "file:./render.php"
+}
